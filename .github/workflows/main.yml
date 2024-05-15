@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          path: main
+        # with:
+        #   path: main
 
       - name: Checkout Notes
         uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
         shell: bash
 
       - name: Move Notes to docs
-        run: mv Notes/* docs/
+        run: mv DigitalGarden0198/Notes/* docs/
         shell: bash
 
       - uses: actions/setup-node@v4
