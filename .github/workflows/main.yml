@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.NOTES_PAT }}
           sparse-checkout: Notes
           ref: main
-          path: .
+          path: DigitalGarden0198
 
       - name: ls
         run: ls
