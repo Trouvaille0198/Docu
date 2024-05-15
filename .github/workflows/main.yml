@@ -13,8 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-
-      - name: Checkout configs
+      - name: Checkout Notes
         uses: actions/checkout@v4
         with:
           repository: Trouvaille0198/DigitalGarden0198
@@ -22,7 +21,7 @@ jobs:
           sparse-checkout: Notes
           ref: main
 
-      - name: copy
+      - name: Move Notes to docs
         run: mv Notes/* docs/
         shell: bash
 
