@@ -18,13 +18,13 @@ jobs:
           ref: main
           path: .
 
-      - name: Checkout Notes
-        uses: actions/checkout@v4
-        with:
-          repository: Trouvaille0198/DigitalGarden0198
-          token: ${{ secrets.NOTES_PAT }}
-          sparse-checkout: Notes
-          ref: main
+      # - name: Checkout Notes
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: Trouvaille0198/DigitalGarden0198
+      #     token: ${{ secrets.NOTES_PAT }}
+      #     sparse-checkout: Notes
+      #     ref: main
 
       - name: ls
         run: ls
