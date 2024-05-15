@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Trouvaille0198/DigitalGarden0198
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.NOTES-PAT }}
           sparse-checkout: Notes
           ref: main
 
