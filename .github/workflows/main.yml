@@ -21,6 +21,10 @@ jobs:
           sparse-checkout: Notes
           ref: main
 
+      - name: ls
+        run: ls
+        shell: bash
+
       - name: Move Notes to docs
         run: mv Notes/* docs/
         shell: bash
