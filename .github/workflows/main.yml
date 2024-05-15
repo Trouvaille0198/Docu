@@ -29,7 +29,7 @@ jobs:
         shell: bash
 
       - name: Move Notes to docs
-        run: mv DigitalGarden0198/Notes/* docs/
+        run: mv DigitalGarden0198/* docs/
         shell: bash
 
       - uses: actions/setup-node@v4
